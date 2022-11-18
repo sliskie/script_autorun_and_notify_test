@@ -4,8 +4,7 @@ on:
   # Triggers the workflow every 6 hours
   schedule:
     - cron: "10 */6 * * *"
-  
-  
+  workflow_dispatch:
 
 jobs:
   build: 
