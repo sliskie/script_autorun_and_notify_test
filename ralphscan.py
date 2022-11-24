@@ -39,7 +39,6 @@ urls = {
 }
 
 print('Starting script')
-
 combined_string = ''
 for url in urls:
     command = "curl '{}' \
@@ -59,7 +58,7 @@ for url in urls:
 
 
 # Send notification
-command = 'curl -d "{}" ntfy.sh/ralphscan'.format(combined_string)
+#command = 'curl -d "{}" ntfy.sh/ralphscan'.format(combined_string)
 command
 
 os.system(command)
