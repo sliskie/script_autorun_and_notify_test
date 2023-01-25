@@ -12,7 +12,9 @@ jobs:
     
     steps:
       - name: Checkout repository content
-        uses: actions/checkout@v2 #Checkout the repository content to github runner
+        uses: actions/checkout@v2
+        with:
+    path: main
       
       - name: Setup Python Version
         uses: actions/setup-python@v4
